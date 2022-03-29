@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { SegundoComponent } from './segundo/segundo.component';
 import { TerceiroComponent } from './terceiro/terceiro.component';
 import { QuartoComponent } from './quarto/quarto.component';
 import { NovoComponenteComponent } from './novo-componente/novo-componente.component';
+import { QuintoComponent } from './quinto/quinto.component';
+
 
 @NgModule({
   declarations: [
@@ -19,10 +22,12 @@ import { NovoComponenteComponent } from './novo-componente/novo-componente.compo
     TerceiroComponent,
     QuartoComponent,
     NovoComponenteComponent,
+    QuintoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
